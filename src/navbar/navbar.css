@@ -10,9 +10,20 @@
 
 }
 
-.account-circle-icon {
+.icons-container {
+    display: flex;
     margin-left: auto;
     margin-top: 15px;
-    padding-right: 50px;
+    padding-right: 60px;
+}
+
+.account-circle-icon {
+    margin-left: 18px;
+    
+   
+}
+
+.assignment-two-tone-icon {
+    margin-left: 32px;
 }
 
