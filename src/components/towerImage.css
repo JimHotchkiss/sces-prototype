@@ -1,0 +1,11 @@
+.tower-image {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin-top: 10%;
+    margin-left: auto;
+    background: transparent url("./img/tower-img.png") 0% 0% no-repeat
+      padding-box;
+    opacity: 1;
+    background-size: 400px;
+}
