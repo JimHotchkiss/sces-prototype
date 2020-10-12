@@ -2,5 +2,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background-color: #f7f7f7; */
+}
+
+.mediaCard-towerImg-div {
+   display: flex;
+}
+
+.towerImg-div {
+    margin-top: auto;
+    position: flixed;
 }

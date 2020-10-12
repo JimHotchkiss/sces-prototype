@@ -18,9 +18,14 @@
 }
 
 .account-circle-icon {
-    margin-left: 18px;
-    
+    margin-left: 18px;  
    
+}
+
+.account-circle-icon:hover {
+    cursor: pointer;
+    color: #ffb600;
+    transition: all ease-in-out 0.4s;
 }
 
 .assignment-two-tone-icon {
