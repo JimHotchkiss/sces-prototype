@@ -55,14 +55,14 @@ function MediaCard() {
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Video Material
+            <p className='video-text'>Video Material</p>
           </Button>
           <Button size='small' color='primary'>
             <DescriptionIcon
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Text Material
+            <p className='video-text'>Text Material</p>
           </Button>
         </CardActions>
       </Card>
@@ -91,14 +91,14 @@ function MediaCard() {
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Video Material
+            <p className='video-text'>Video Material</p>
           </Button>
           <Button size='small' color='primary'>
             <DescriptionIcon
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Text Material
+            <p className='video-text'>Text Material</p>
           </Button>
         </CardActions>
       </Card>
@@ -127,14 +127,14 @@ function MediaCard() {
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Video Material
+            <p className='video-text'>Video Material</p>
           </Button>
           <Button size='small' color='primary'>
             <DescriptionIcon
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Text Material
+            <p className='video-text'>Text Material</p>
           </Button>
         </CardActions>
       </Card>
@@ -163,14 +163,14 @@ function MediaCard() {
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Video Material
+            <p className='video-text'>Video Material</p>
           </Button>
           <Button size='small' color='primary'>
             <DescriptionIcon
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
             />
-            Text Material
+            <p className='video-text'>Text Material</p>
           </Button>
         </CardActions>
       </Card>
