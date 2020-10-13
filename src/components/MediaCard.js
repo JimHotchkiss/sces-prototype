@@ -24,6 +24,11 @@ const useStyles = makeStyles({
 function MediaCard() {
   const classes = useStyles();
 
+  const handleVideoButton = (e) => {
+    e.preventDefault();
+    window.open("https://youtu.be/SK1z4IPXXqc");
+  };
+
   return (
     <div className='cards-container'>
       <Card className={classes.root}>
@@ -45,7 +50,7 @@ function MediaCard() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size='small' color='primary'>
+          <Button onClick={handleVideoButton} size='small' color='primary'>
             <VideoLibraryIcon
               fontSize='large'
               style={{ color: "black", marginRight: "4px" }}
