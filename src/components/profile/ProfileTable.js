@@ -39,92 +39,92 @@ const rows = [
   createData(
     "Topic 1",
     "HUB 1",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
 
   createData(
     "Topic 2",
     "HUB 2",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
     "Topic 3",
     "HUB 3",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
     "Topic 4",
     "HUB 4",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
     "Topic 5",
     "HUB 5",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
     "Topic 6",
     "HUB 6",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 7",
     "HUB 7",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 8",
     "HUB 8",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 9",
     "HUB 9",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 10",
     "HUB 10",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 11",
     "HUB 11",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 12",
     "HUB 12",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 13",
     "HUB 13",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 14",
     "HUB 14",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
     "Topic 15",
     "HUB 15",
-    <PictureAsPdfIcon style={{ color: "red" }} />,
+    <PictureAsPdfIcon style={{ cursor: "pointer", color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
 ];
