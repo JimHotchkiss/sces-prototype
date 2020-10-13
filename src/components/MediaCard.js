@@ -36,7 +36,7 @@ function MediaCard() {
           />
           <CardContent>
             <Typography gutterBottom variant='h5' component='h2'>
-              Compency Topic
+              Compency Topic 1
             </Typography>
             <Typography variant='body2' color='textSecondary' component='p'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
