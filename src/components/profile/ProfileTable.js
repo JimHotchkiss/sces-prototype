@@ -9,6 +9,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 
 const columns = [
   { id: "name", label: "Name", minWidth: 170 },
@@ -29,101 +30,101 @@ const columns = [
   },
 ];
 
-function createData(name, code, dateAssigned, completed) {
+function createData(name, code, resources, completed) {
   //   const density = population / size;
-  return { name, code, dateAssigned, completed };
+  return { name, code, resources, completed };
 }
 
 const rows = [
   createData(
     "Topic 1",
     "HUB 1",
-    <VerifiedUserIcon style={{ color: "#ffb600" }} />,
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
 
   createData(
-    "Topic 1",
+    "Topic 2",
     "HUB 2",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 3",
     "HUB 3",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 4",
     "HUB 4",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 5",
     "HUB 5",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "#ffb600" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 6",
     "HUB 6",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 7",
     "HUB 7",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 8",
     "HUB 8",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 9",
     "HUB 9",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 10",
     "HUB 10",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 11",
     "HUB 11",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 12",
     "HUB 12",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 13",
     "HUB 13",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 14",
     "HUB 14",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
   createData(
-    "Topic 1",
+    "Topic 15",
     "HUB 15",
-    "PDF",
+    <PictureAsPdfIcon style={{ color: "red" }} />,
     <VerifiedUserIcon style={{ color: "gray", opacity: "0.3" }} />
   ),
 ];
