@@ -21,12 +21,13 @@ const useStyles = makeStyles({
   },
 });
 
-function MediaCard() {
+function MediaCard(props) {
+  console.log(props);
   const classes = useStyles();
 
   const handleVideoButton = (e) => {
     e.preventDefault();
-    window.open("https://youtu.be/SK1z4IPXXqc");
+    props.setShowVideo(true);
   };
 
   return (

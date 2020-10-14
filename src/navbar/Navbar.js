@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navbar.css";
 import StrykerLogo from "./StrykerLogo";
 import TitleComponent from "./TitleComponent";
@@ -18,7 +18,14 @@ function Navbar(props) {
   }
 
   const homeIcon = (
-    <div onClick={() => props.setShowProfile(false)} className='home-icon'>
+    <div
+      onClick={() => {
+        props.setShowProfile(false);
+        if (props.showVideo) {
+          props.setShowVideo(false);
+        }
+      }}
+      className='home-icon'>
       <HomeIcon fontSize='large' />
       <div className='profile-label'>
         <p>Home Page</p>
@@ -46,8 +53,13 @@ function Navbar(props) {
         className={
           props.showProfile ? "home-icon-container" : "icons-container"
         }>
-        {props.showProfile ? null : profileIcon}
-        {props.showProfile ? homeIcon : null}
+        {props.showProfile
+          ? homeIcon
+          : props.showVideo
+          ? homeIcon
+          : profileIcon}
+        {/* {props.showProfile ? homeIcon : null}
+        {props.showVideo ? homeIcon : null} */}
       </div>
     </div>
   );
