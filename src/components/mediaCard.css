@@ -3,12 +3,17 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 16px auto;
-    margin-top: 70px;
+    margin: auto;
     max-width: 70%;
 
 }
 
 .video-text {
     color: #262626;
+}
+
+.card-profile-avatar {
+    width: 400px;
+    margin-left: 230px;
+    margin-top: 5%;
 }

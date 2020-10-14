@@ -4,15 +4,8 @@ import StrykerLogo from "./StrykerLogo";
 import TitleComponent from "./TitleComponent";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import HomeIcon from "@material-ui/icons/Home";
-// import AssignmentTwoToneIcon from "@material-ui/icons/AssignmentTwoTone";
 
 function Navbar(props) {
-  // function handleClick() {
-  //   alert("sup");
-  // }
-
-  // const [count, setCount] = useState(0);
-
   function handleClick() {
     props.setShowProfile(true);
   }
@@ -23,6 +16,8 @@ function Navbar(props) {
         props.setShowProfile(false);
         if (props.showVideo) {
           props.setShowVideo(false);
+        } else if (props.showText) {
+          props.setShowText(false);
         }
       }}
       className='home-icon'>
@@ -34,10 +29,7 @@ function Navbar(props) {
   );
 
   const profileIcon = (
-    <div
-      // onClick={() => props.setShowProfile(true)}
-      onClick={handleClick}
-      className='account-circle-icon'>
+    <div onClick={handleClick} className='account-circle-icon'>
       <AccountCircleIcon fontSize='large' />
       <div className='profile-label'>
         <p>Account Profile</p>
@@ -56,6 +48,8 @@ function Navbar(props) {
         {props.showProfile
           ? homeIcon
           : props.showVideo
+          ? homeIcon
+          : props.showText
           ? homeIcon
           : profileIcon}
       </div>

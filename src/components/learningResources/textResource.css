@@ -1,0 +1,36 @@
+.profile-avatar-text-resource-div {
+    margin-top: 5%;
+}
+
+.text-resource-container {
+    margin: auto;
+    width: 600px;
+    height: 100vh;
+    background: transparent url("./img/pdf-img.png") 0% 0% no-repeat
+      padding-box;
+    opacity: 1;
+    background-size: 600px;
+}
+
+.text-profile-avatar {
+    padding-left: 290px;
+    margin-bottom: 8px;
+    max-width: 800px;
+}
+
+.profile-avatar-printer {
+    display: flex;
+}
+
+.printer-icon-div {
+    padding-top: 16px;
+    margin-left: auto;
+    margin-right: 360px;
+    width: 100px;
+}
+
+.printer-icon-div:hover{
+    cursor: pointer;
+    color: #ffb600;
+    transition: all ease-in-out 0.4s; 
+}

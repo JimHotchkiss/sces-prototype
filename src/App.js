@@ -4,14 +4,21 @@ import "./App.css";
 import MediaCard from "./components/MediaCard";
 import Profile from "./components/profile/Profile";
 import VideoResource from "./components/learningResources/VideoResource";
+import TextResource from "./components/learningResources/TextResource";
 
 function App() {
   const [showProfile, setShowProfile] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
+  const [showText, setShowText] = useState(false);
 
   const mediaCard = (
     <div className='mediaCard-towerImg-div'>
-      <MediaCard showVideo={showVideo} setShowVideo={setShowVideo} />
+      <MediaCard
+        showText={showText}
+        setShowText={setShowText}
+        showVideo={showVideo}
+        setShowVideo={setShowVideo}
+      />
       <div className='towerImg-div'>{/* <TowerImage /> */}</div>
     </div>
   );
@@ -25,12 +32,22 @@ function App() {
   return (
     <div className='App'>
       <Navbar
-        setShowVideo={setShowVideo}
+        showText={showText}
+        setShowText={setShowText}
         showVideo={showVideo}
+        setShowVideo={setShowVideo}
         showProfile={showProfile}
         setShowProfile={setShowProfile}
       />
-      {showProfile ? <Profile /> : showVideo ? <VideoResource /> : mediaCard}
+      {showProfile ? (
+        <Profile />
+      ) : showVideo ? (
+        <VideoResource />
+      ) : showText ? (
+        <TextResource />
+      ) : (
+        mediaCard
+      )}
       {/* {showVideo ? <VideoResource /> : null} */}
     </div>
   );

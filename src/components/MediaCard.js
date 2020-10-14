@@ -9,6 +9,8 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import DescriptionIcon from "@material-ui/icons/Description";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
+import ProfileAvatar from "./profile/ProfileAvatar";
+
 import "./mediaCard.css";
 
 const useStyles = makeStyles({
@@ -22,7 +24,6 @@ const useStyles = makeStyles({
 });
 
 function MediaCard(props) {
-  console.log(props);
   const classes = useStyles();
 
   const handleVideoButton = (e) => {
@@ -30,151 +31,161 @@ function MediaCard(props) {
     props.setShowVideo(true);
   };
 
+  const handleTextButton = (e) => {
+    e.preventDefault();
+    props.setShowText(true);
+  };
+
   return (
-    <div className='cards-container'>
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            style={{ height: 0, paddingTop: "56%" }}
-            className={classes.media}
-            image={require("./img/sces-img.png")}
-            title='Contemplative Reptile'
-          />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='h2'>
-              Compency Topic 1
-            </Typography>
-            <Typography variant='body2' color='textSecondary' component='p'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button onClick={handleVideoButton} size='small' color='primary'>
-            <VideoLibraryIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
+    <div className='cards-avatar-container'>
+      <div className='card-profile-avatar'>
+        <ProfileAvatar />
+      </div>
+      <div className='cards-container'>
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              style={{ height: 0, paddingTop: "56%" }}
+              className={classes.media}
+              image={require("./img/sces-img.png")}
+              title='Contemplative Reptile'
             />
-            <p className='video-text'>Video Material</p>
-          </Button>
-          <Button size='small' color='primary'>
-            <DescriptionIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
+            <CardContent>
+              <Typography gutterBottom variant='h5' component='h2'>
+                Compency Topic 1
+              </Typography>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button onClick={handleVideoButton} size='small' color='primary'>
+              <VideoLibraryIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Video Material</p>
+            </Button>
+            <Button onClick={handleTextButton} size='small' color='primary'>
+              <DescriptionIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Text Material</p>
+            </Button>
+          </CardActions>
+        </Card>
+        {/* Card Two  */}
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              style={{ height: 0, paddingTop: "56%" }}
+              className={classes.media}
+              image={require("./img/sces-img2.png")}
+              title='Contemplative Reptile'
             />
-            <p className='video-text'>Text Material</p>
-          </Button>
-        </CardActions>
-      </Card>
-      {/* Card Two  */}
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            style={{ height: 0, paddingTop: "56%" }}
-            className={classes.media}
-            image={require("./img/sces-img2.png")}
-            title='Contemplative Reptile'
-          />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='h2'>
-              Compency Topic 2
-            </Typography>
-            <Typography variant='body2' color='textSecondary' component='p'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size='small' color='primary'>
-            <VideoLibraryIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
+            <CardContent>
+              <Typography gutterBottom variant='h5' component='h2'>
+                Compency Topic 2
+              </Typography>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size='small' color='primary'>
+              <VideoLibraryIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Video Material</p>
+            </Button>
+            <Button size='small' color='primary'>
+              <DescriptionIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Text Material</p>
+            </Button>
+          </CardActions>
+        </Card>
+        {/* Card Three  */}
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              style={{ height: 0, paddingTop: "56%" }}
+              className={classes.media}
+              image={require("./img/sces-img3.png")}
+              title='Contemplative Reptile'
             />
-            <p className='video-text'>Video Material</p>
-          </Button>
-          <Button size='small' color='primary'>
-            <DescriptionIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
+            <CardContent>
+              <Typography gutterBottom variant='h5' component='h2'>
+                Compency Topic 3
+              </Typography>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size='small' color='primary'>
+              <VideoLibraryIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Video Material</p>
+            </Button>
+            <Button size='small' color='primary'>
+              <DescriptionIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Text Material</p>
+            </Button>
+          </CardActions>
+        </Card>
+        {/* Card Four  */}
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              style={{ height: 0, paddingTop: "56%" }}
+              className={classes.media}
+              image={require("./img/sces-img4.png")}
+              title='Contemplative Reptile'
             />
-            <p className='video-text'>Text Material</p>
-          </Button>
-        </CardActions>
-      </Card>
-      {/* Card Three  */}
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            style={{ height: 0, paddingTop: "56%" }}
-            className={classes.media}
-            image={require("./img/sces-img3.png")}
-            title='Contemplative Reptile'
-          />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='h2'>
-              Compency Topic 3
-            </Typography>
-            <Typography variant='body2' color='textSecondary' component='p'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size='small' color='primary'>
-            <VideoLibraryIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
-            />
-            <p className='video-text'>Video Material</p>
-          </Button>
-          <Button size='small' color='primary'>
-            <DescriptionIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
-            />
-            <p className='video-text'>Text Material</p>
-          </Button>
-        </CardActions>
-      </Card>
-      {/* Card Four  */}
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            style={{ height: 0, paddingTop: "56%" }}
-            className={classes.media}
-            image={require("./img/sces-img4.png")}
-            title='Contemplative Reptile'
-          />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='h2'>
-              Compency Topic 4
-            </Typography>
-            <Typography variant='body2' color='textSecondary' component='p'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size='small' color='primary'>
-            <VideoLibraryIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
-            />
-            <p className='video-text'>Video Material</p>
-          </Button>
-          <Button size='small' color='primary'>
-            <DescriptionIcon
-              fontSize='large'
-              style={{ color: "black", marginRight: "4px" }}
-            />
-            <p className='video-text'>Text Material</p>
-          </Button>
-        </CardActions>
-      </Card>
+            <CardContent>
+              <Typography gutterBottom variant='h5' component='h2'>
+                Compency Topic 4
+              </Typography>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size='small' color='primary'>
+              <VideoLibraryIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Video Material</p>
+            </Button>
+            <Button size='small' color='primary'>
+              <DescriptionIcon
+                fontSize='large'
+                style={{ color: "black", marginRight: "4px" }}
+              />
+              <p className='video-text'>Text Material</p>
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
     </div>
   );
 }
