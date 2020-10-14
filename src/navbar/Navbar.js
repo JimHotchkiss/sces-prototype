@@ -58,8 +58,6 @@ function Navbar(props) {
           : props.showVideo
           ? homeIcon
           : profileIcon}
-        {/* {props.showProfile ? homeIcon : null}
-        {props.showVideo ? homeIcon : null} */}
       </div>
     </div>
   );
