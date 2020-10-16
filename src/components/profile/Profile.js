@@ -6,7 +6,9 @@ import "./profile.css";
 function Profile() {
   return (
     <div className='profile-container'>
-      <ProfileAvatar />
+      <div className='account-avatar-div'>
+        <ProfileAvatar />
+      </div>
       <ProfileTable />
     </div>
   );
