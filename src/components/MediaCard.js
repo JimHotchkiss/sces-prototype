@@ -52,7 +52,7 @@ function MediaCard(props) {
             />
             <CardContent>
               <Typography gutterBottom variant='h5' component='h2'>
-                Compency Topic 1
+                Competency Topic 1
               </Typography>
               <Typography variant='body2' color='textSecondary' component='p'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -88,7 +88,7 @@ function MediaCard(props) {
             />
             <CardContent>
               <Typography gutterBottom variant='h5' component='h2'>
-                Compency Topic 2
+                Competency Topic 2
               </Typography>
               <Typography variant='body2' color='textSecondary' component='p'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -124,7 +124,7 @@ function MediaCard(props) {
             />
             <CardContent>
               <Typography gutterBottom variant='h5' component='h2'>
-                Compency Topic 3
+                Competency Topic 3
               </Typography>
               <Typography variant='body2' color='textSecondary' component='p'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -160,7 +160,7 @@ function MediaCard(props) {
             />
             <CardContent>
               <Typography gutterBottom variant='h5' component='h2'>
-                Compency Topic 4
+                Competency Topic 4
               </Typography>
               <Typography variant='body2' color='textSecondary' component='p'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
